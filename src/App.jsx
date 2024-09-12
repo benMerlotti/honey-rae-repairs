@@ -1,19 +1,14 @@
-import { useState } from "react";
+import "./App.css";
+import { CustomerList } from "./components/customers/CustomersList";
+import { EmployeesList } from "./components/employees/EmployeesList";
+import { TicketList } from "./components/tickets/TicketList";
 
 export const App = () => {
-  const [count, setCount] = useState(0); // [stateVariable, setterFunction]
-  const handleButtonClick = () => {
-    setCount(count + 1);
-  };
-
   return (
     <>
-      <h1>Hello!</h1>
-      <div>This is amazing!</div>
-      <button className="btn-secondary" onClick={handleButtonClick}>
-        Click me!
-      </button>
-      <div>Count: {count}</div>
+      {/* <TicketList /> */}
+      {/* <CustomerList /> */}
+      <EmployeesList />
     </>
   );
 };
